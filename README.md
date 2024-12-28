@@ -2,6 +2,14 @@
 
 Visit: https://dragdrop.powerfullapp.ro
 
+```
+<drag-list
+    :items="[{ label: '', id: '' }]"
+    direction="horizontal|vertical"
+    @order="(order) => { console.log('ordered items', order); }"
+>
+```
+
 ## Project setup
 ```
 npm install
@@ -16,11 +24,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
